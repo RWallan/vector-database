@@ -11,6 +11,27 @@ ipykernel = "^6.26.0"
 pandas = "^2.1.2"
 
 
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.5"
+black = {extras = ["jupyter"], version = "^23.11.0"}
+isort = "^5.12.0"
+taskipy = "^1.12.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+line_length = 79
+profile = "black"
+
+[tool.ruff]
+line-length=79
+exclude = [".venv"]
+
+[tool.taskipy.tasks]
+lint = "ruff . && black --check . && isort . --diff"
+format = "black . && isort ."
