@@ -11,9 +11,9 @@ def create_random_vector(range: tuple[int, int], size: int, seed: int = None):
 
 
 def transform_np_array(array: np.array, type: TransformTypeEnum):
-    if TransformTypeEnum(type).value == "list":
+    if TransformTypeEnum(type).name == "list":
         return array.tolist()
-    elif TransformTypeEnum(type).value == "bytes":
+    elif TransformTypeEnum(type).name == "bytes":
         return array.tobytes()
 
 
