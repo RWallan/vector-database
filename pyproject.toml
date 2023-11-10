@@ -9,6 +9,10 @@ readme = "README.md"
 python = "3.11.*"
 ipykernel = "^6.26.0"
 pandas = "^2.1.2"
+onnxruntime = "1.16.1"
+chromadb = "0.4.15"
+pyarrow = "^14.0.1"
+fastparquet = "^2023.10.1"
 
 
 [tool.poetry.group.dev.dependencies]
