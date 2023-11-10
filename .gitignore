@@ -196,3 +196,6 @@ pyrightconfig.json
 *.db*
 data/1_intermediate/*.csv
 data/2_processed/*.csv
+*.bin
+*.sqlite3
+*.parquet
