@@ -39,11 +39,29 @@ Os exemplos se basearão no banco de dados **Medium Post Titles** disponível no
 
 # Requisitos
 
-Python 3.11
+Python 3.11.
 
 Este repositório conta com as principais bibliotecas:
 
 * [ChromaDB](https://www.trychroma.com/)
+* [Pandas](https://pandas.pydata.org/docs/)
+
+E o [Poetry]() como gerenciados de bibliotecas.
+
+# Como instalar
+
+Para instalar o projeto, primeiramente clone-o do github
+
+```bash
+git clone https://github.com/RWallan/vector-database.git
+cd vector-database
+```
+
+E instale as dependências
+
+```bash
+poetry install
+```
 
 # Licença
 
