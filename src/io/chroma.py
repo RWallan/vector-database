@@ -86,7 +86,9 @@ class ChromaDBIO:
 
         tmp = pd.DataFrame(result.metadatas[0])
 
-        return pd.concat([pd.DataFrame(self.__data), tmp], axis=1)
+        return pd.concat([pd.DataFrame(self.__data), tmp], axis=1).sort_values(
+            by="distances", ascending=False
+        )
 
     def read_to_pandas(self, query: str, *, n_results: int = 1):
         result = self.query(query, n_results=n_results)
