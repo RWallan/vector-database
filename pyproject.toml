@@ -1,9 +1,21 @@
 [tool.poetry]
 name = "vector-database"
 version = "0.1.0"
-description = ""
-authors = ["RWallan <3am.richardwallan@gmail.com>"]
+description = "Repositório que introduz os conceitos básicos de Vector Databases utilizando exemplos simples com o banco de dados baseado em arquivos ChromaDB."
+authors = ["Richard Wallan <3am.richardwallan@gmail.com>"]
+license = "MIT"
 readme = "README.md"
+classifiers = [
+    "Natural Language :: Portuguese (Brazilian)",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Education",
+]
+
+[tool.poetry.urls]
+"Documentação" = "https://github.com/RWallan/vector-database/blob/main/README.md"
+"Código" = "https://github.com/RWallan/vector-database"
+"Bug Tracker" = "https://github.com/RWallan/vector-database/issues"
 
 [tool.poetry.dependencies]
 python = "3.11.*"
